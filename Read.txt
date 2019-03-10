@@ -1,0 +1,45 @@
+POM: Project Object Model
+POM: Is a Heart of Maven Project
+
+If Some time dependencies not downloading then Do 
+Maven Install or 
+Update Project
+Maven build > Goal: Clen Install > Run
+BUILD SUCCESS in Console
+
+
+SOme time you have to add 
+<maven.compiler.source>1.6</maven.compiler.source>
+<maven.compiler.target>1.6</maven.compiler.target>
+In properties
+Ref:https://stackoverflow.com/questions/49028810/error-source-option-1-5-is-no-longer-supported-use-1-6-or-later
+
+
+To Run Directly cmd 
+cd project path
+ls
+
+For : Run and generate build
+mvn clean install
+here jar creates in project
+
+For : Run 
+mvn test
+
+For : Generate build oe skip test
+mvn package -DskipTests
+
+or 
+
+mvn package -Dmaven.test.skip=true
+
+for this need to add one properties
+<properties>
+<maven.test.skip>true</maven.test.skip>
+</properties>
+
+If any error comming in POM.xml
+Update Project
+
+
+Maven Plugins: https://maven.apache.org/plugins/
